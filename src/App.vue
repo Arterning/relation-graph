@@ -15,13 +15,13 @@ const handleDataChange = (newData: any) => {
 
 <template>
   <div class="flex flex-col h-screen bg-gray-900 text-gray-100">
-    <header class="bg-gray-800 p-4 shadow-lg">
+    <!-- <header class="bg-gray-800 p-4 shadow-lg">
       <h1 class="text-2xl font-bold text-cyan-400">知识图谱网络</h1>
-    </header>
+    </header> -->
     
     <div class="flex flex-col flex-1 overflow-hidden">
       <GraphControls 
-        class="bg-gray-800 p-4 border-b border-gray-700" 
+        class="bg-gray-800 p-2 border-b border-gray-700" 
         @data-change="handleDataChange"
       />
       <KnowledgeGraph 

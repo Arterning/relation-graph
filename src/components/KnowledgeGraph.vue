@@ -106,6 +106,17 @@ const initGraph = () => {
           'target-arrow-color': '#ef4444',
           'source-arrow-color': '#ef4444'
         }
+      },
+      {
+        selector: '.highlight',
+        style: {
+          'background-color': '#ef4444',
+          'line-color': '#ef4444',
+          'target-arrow-color': '#ef4444',
+          'z-index': 9999,
+          'border-width': '2px',
+          'border-color': '#ffffff'
+        }
       }
     ],
     layout: {
