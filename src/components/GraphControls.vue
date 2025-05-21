@@ -150,38 +150,31 @@ const toggleFullscreen = () => {
     <!-- 添加节点按钮 -->
     <button
       @click="showNodeModal"
-      class="w-10 h-10 flex items-center justify-center bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg transition-colors duration-200"
+      class="h-10 flex items-center justify-center text-white rounded-lg transition-colors duration-200"
       title="添加节点"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <circle cx="12" cy="12" r="6" />
-        <path d="M12 8v8M8 12h8" />
-      </svg>
+      <img src="../assets/vue.svg" class="h-6 w-6" alt="添加节点" />
+      添加节点
     </button>
 
     <!-- 添加关系按钮 -->
     <button
       @click="showEdgeModal"
-      class="w-10 h-10 flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors duration-200"
+      class="h-10 flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors duration-200"
       title="添加关系"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <path d="M8 12h8M16 12l-3-3m3 3l-3 3" />
-      </svg>
+      <img src="../assets/vue.svg" class="h-6 w-6" alt="添加关系" />
+      添加关系
     </button>
 
     <!-- 全屏按钮 -->
     <button
       @click="toggleFullscreen"
-      class="w-10 h-10 flex items-center justify-center bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors duration-200"
+      class="h-10 flex items-center justify-center bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors duration-200"
       title="全屏"
     >
-      <svg v-if="!isFullscreen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <path d="M4 14h6m0 0v6m0-6l-7 7m17-11h-6m0 0V4m0 6l7-7" />
-      </svg>
-      <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-        <path d="M4 10h6m0 0V4m0 6l-7-7m17 11h-6m0 0v6m0-6l7 7" />
-      </svg>
+      <img src="../assets/vue.svg" class="h-6 w-6" alt="全屏" />
+      全屏
     </button>
 
     <!-- 添加节点对话框 -->
