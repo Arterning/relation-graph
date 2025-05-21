@@ -304,5 +304,31 @@ dialog::backdrop {
 dialog {
   border: none;
   padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+/* 确保对话框内容不会超出屏幕 */
+dialog:focus {
+  outline: none;
+}
+
+/* 添加过渡动画效果 */
+dialog[open] {
+  animation: show-dialog 0.3s ease normal;
+}
+
+@keyframes show-dialog {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 </style>
